@@ -6,6 +6,8 @@ $white: #FFFFFF;
 * {
     box-sizing: border-box;
     font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper {
@@ -24,6 +26,7 @@ $white: #FFFFFF;
         padding-top: 5em;
         line-height: 2;
         font-weight: 700;
+        margin: 0;
     }
     .top_icons {
         font-size: 4em;
@@ -44,9 +47,38 @@ $white: #FFFFFF;
     background-color: $secondary;
     .project_container {
         display: flex; 
-        border: 10px solid gold;
+        flex-wrap: wrap;
+        // border: 10px solid gold;
+        line-height: 0;
+        padding: 3em 0;
         .proj {
-            flex: 1 33%;
+            flex: 1 0 33%;
+            img {
+               width: 100%;            
+             }
+        }
+    }
+}
+
+.contact {
+    background-color: $main;
+    .info {
+        padding: 3em 0;
+        text-align: center;
+        color: $white;
+        h2 {
+            font-size: 4em;
+        }
+        .details {
+            font-size: 4em;
+            padding-top: .5em;
+            a {
+                color: $white;
+                padding: 0 .5em;
+                &:hover {
+                    color: $highlight;
+                }
+            }
         }
     }
 }
