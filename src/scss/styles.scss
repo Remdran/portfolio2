@@ -1,0 +1,52 @@
+$main: #31323d;
+$secondary: #3a3b49;
+$highlight: #4ad7b1;
+$white: #FFFFFF;
+
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.wrapper {
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 100vh;
+    background-color: $main;    
+    .name {
+        font-size: 4em;
+        color: $white;
+        text-align: center;
+        padding-top: 5em;
+        line-height: 2;
+        font-weight: 700;
+    }
+    .top_icons {
+        font-size: 4em;
+        text-align: center;
+        margin-top: 1em;  
+        a {
+            padding: .5em;
+            color: $white;
+            &:hover {
+                color: $highlight;
+            }
+        }
+        
+    }    
+}
+
+.projects {
+    background-color: $secondary;
+    .project_container {
+        display: flex; 
+        border: 10px solid gold;
+        .proj {
+            flex: 1 33%;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif; }
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+.banner {
+  height: 100vh;
+  background-color: #31323d; }
+  .banner .name {
+    font-size: 4em;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 5em;
+    line-height: 2;
+    font-weight: 700; }
+  .banner .top_icons {
+    font-size: 4em;
+    text-align: center;
+    margin-top: 1em; }
+    .banner .top_icons a {
+      padding: .5em;
+      color: #FFFFFF; }
+      .banner .top_icons a:hover {
+        color: #4ad7b1; }
+
+.projects {
+  background-color: #3a3b49; }
+  .projects .project_container {
+    display: flex;
+    border: 10px solid gold; }
+    .projects .project_container .proj {
+      flex: 1 33%; }
