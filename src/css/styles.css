@@ -38,9 +38,54 @@
     line-height: 0;
     padding: 3em 0; }
     .projects .project_container .proj {
-      flex: 1 0 33%; }
+      flex: 1 1 33%;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.4s, opacity 0.1s 0.3s; }
       .projects .project_container .proj img {
         width: 100%; }
+      .projects .project_container .proj .proj_info {
+        background-color: rgba(74, 215, 177, 0.85);
+        padding: 2em 10%;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform 0.4s, opacity 0.1s 0.3s;
+        text-align: center; }
+        .projects .project_container .proj .proj_info h2 {
+          color: #FFFFFF;
+          padding: 1em;
+          font-size: 1.5em;
+          margin-bottom: .2em; }
+        .projects .project_container .proj .proj_info p {
+          color: #FFFFFF;
+          line-height: 1.5;
+          font-size: 1.2em; }
+        .projects .project_container .proj .proj_info .skills {
+          padding-top: .5em;
+          text-align: center;
+          margin-bottom: 1.5em; }
+        .projects .project_container .proj .proj_info .center {
+          margin: 0 auto;
+          text-align: center; }
+        .projects .project_container .proj .proj_info .button {
+          color: #FFFFFF;
+          text-decoration: none;
+          border: 2px solid #FFFFFF;
+          padding: .5em 1.5em;
+          border-radius: .5em;
+          text-transform: uppercase; }
+    .projects .project_container .proj:hover img {
+      transform: scale(1.5);
+      transition: transform 0.4s, opacity 0.1s 0.3s; }
+    .projects .project_container .proj:hover .proj_info {
+      opacity: 1;
+      transform: translateY(0px);
+      transition: transform 0.4s, opacity 0.1s; }
 
 .contact {
   background-color: #31323d; }
@@ -58,3 +103,11 @@
         padding: 0 .5em; }
         .contact .info .details a:hover {
           color: #4ad7b1; }
+
+@media only screen and (max-width: 960px) {
+  .projects .project_container {
+    flex-wrap: no-wrap; }
+    .projects .project_container .proj {
+      flex: 1 1 50%; }
+      .projects .project_container .proj img {
+        width: 100%; } }
