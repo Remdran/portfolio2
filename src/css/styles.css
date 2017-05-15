@@ -38,26 +38,41 @@
     padding: 3em 0; }
     .projects .project_container .proj {
       padding: .5em;
-      flex: 1 1 100%;
       display: flex; }
       .projects .project_container .proj img {
-        width: 100%; }
+        max-width: 100%;
+        flex: 3 1 100%; }
       .projects .project_container .proj .proj_info {
-        display: inline;
+        flex: 1 2 100%;
         color: #FFFFFF;
-        line-height: 1.5; }
+        line-height: 1.5;
+        max-width: 800px; }
         .projects .project_container .proj .proj_info .h2_right {
-          display: inline-block;
           margin-left: 5%;
-          margin-top: 1em;
+          margin-top: .8em;
           margin-bottom: 1em; }
         .projects .project_container .proj .proj_info .p_right {
-          display: inline-block;
           margin-left: 5%;
           margin-bottom: 1em; }
         .projects .project_container .proj .proj_info .skills_right {
           margin-left: 5%;
           margin-bottom: 1em; }
+        .projects .project_container .proj .proj_info .button_right {
+          margin-left: 5%;
+          color: #FFFFFF; }
+        .projects .project_container .proj .proj_info .h2_left {
+          margin-right: 5%;
+          margin-top: .8em;
+          margin-bottom: 1em; }
+        .projects .project_container .proj .proj_info .p_left {
+          margin-right: 5%;
+          margin-bottom: 1em; }
+        .projects .project_container .proj .proj_info .skills_left {
+          margin-right: 5%;
+          margin-bottom: 1em; }
+        .projects .project_container .proj .proj_info .button_left {
+          margin-right: 5%;
+          color: #FFFFFF; }
 
 .contact {
   background-color: #31323d; }
@@ -75,11 +90,3 @@
         padding: 0 .5em; }
         .contact .info .details a:hover {
           color: #4ad7b1; }
-
-@media only screen and (max-width: 960px) {
-  .projects .project_container {
-    flex-wrap: no-wrap; }
-    .projects .project_container .proj {
-      flex: 1 1 50%; }
-      .projects .project_container .proj img {
-        width: 100%; } }

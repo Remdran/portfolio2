@@ -51,35 +51,56 @@ $white: #FFFFFF;
         padding: 3em 0;        
         .proj {
             padding: .5em;
-            flex: 1 1 100%;
             // border: 2px solid green;
             display:flex;
             img {
-                width: 100%;
+                max-width: 100%;
+                flex: 3 1 100%;
              }
              .proj_info {
-                 display: inline;
+                 flex: 1 2 100%;
                  color: $white;
                  line-height: 1.5;
-                 .h2_right {
-                     display: inline-block;
+                 max-width: 800px;
+                 .h2_right {                     
                      margin-left: 5%;
-                     margin-top: 1em;
+                     margin-top: .8em;
                      margin-bottom: 1em;
                  }
                  .p_right {
-                     display: inline-block;
                      margin-left: 5%;
                      margin-bottom: 1em;
                     
                  }
                  .skills_right {
                      margin-left: 5%;
-                     margin-bottom: 1em;
-            
+                     margin-bottom: 1em;            
                  }
-             }
-            
+
+                 .button_right {
+                     margin-left: 5%;
+                     color: $white;                    
+                 }
+                .h2_left {                     
+                     margin-right: 5%;
+                     margin-top: .8em;
+                     margin-bottom: 1em;
+                 }
+                 .p_left {
+                     margin-right: 5%;
+                     margin-bottom: 1em;
+                    
+                 }
+                 .skills_left {
+                     margin-right: 5%;
+                     margin-bottom: 1em;            
+                 }
+
+                 .button_left {
+                     margin-right: 5%;
+                     color: $white;                    
+                 }
+             }            
          }
     }
 }
@@ -107,18 +128,18 @@ $white: #FFFFFF;
     }
 }
 
-@media only screen and (max-width: 960px) {
-    .projects {
+// @media only screen and (max-width: 960px) {
+//     .projects {
     
-        .project_container {
-            flex-wrap: no-wrap;
-            .proj {
-                flex: 1 1 50%;
-                img {
-                width: 100%;            
-                }
-            }
-        }
-    }
-}
+//         .project_container {
+//             flex-wrap: no-wrap;
+//             .proj {
+//                 flex: 1 1 50%;
+//                 img {
+//                 width: 100%;            
+//                 }
+//             }
+//         }
+//     }
+// }
 
