@@ -45,24 +45,38 @@ $white: #FFFFFF;
 
 .projects {
     background-color: $secondary;
+    .wrapper {
+        width: 1440px;
+    }
     .project_container {
         display: flex; 
         flex-wrap: wrap;
         line-height: 0;
         padding: 3em 0;
         .proj {
-            flex: 1 1 33%;
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.4s;
+            flex: 1 1 50%;
+            justify-content: center;
+            align-content: space-around;
+            display: flex; 
+            a {
+                width: 640px;
+                display: flex; 
+                flex: 1 1 50%;
+            }
             img {
-               width: 100%;            
+                flex: 1 1 50%;
+                width: 640px;     
              }
+        }
+        #proj3 {
+            flex: 1 1 100%;
+            img {
+                flex: 1 1 100%;
+                width: 1280px;
+            }
         }
         .proj:hover {
             img {
-                transform: scale(1.5);
-                transition: transform 0.4s;
             }
         }
     }
@@ -138,7 +152,7 @@ $white: #FFFFFF;
         .modal_img {
             width: 300px;
             float: right;
-           margin-right: 50px;
+            margin-right: 50px;
         }
         .modal_icons {
             font-size: 1.8em;
@@ -168,7 +182,7 @@ $white: #FFFFFF;
 }
 
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1439px) {
     .projects {
     
         .project_container {
@@ -176,9 +190,18 @@ $white: #FFFFFF;
             .proj {
                 flex: 1 1 50%;
                 img {
-                width: 100%;            
+                flex: 1 1 50%;
+                    width: 100%;        
                 }
             }
+
+            #proj3 {
+                flex: 1 1 100%;
+                img {
+                flex: 1 1 100%;
+                    width: 100%;
+                }
+        }
         }
     }
 }

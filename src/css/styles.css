@@ -32,21 +32,30 @@
 
 .projects {
   background-color: #3a3b49; }
+  .projects .wrapper {
+    width: 1440px; }
   .projects .project_container {
     display: flex;
     flex-wrap: wrap;
     line-height: 0;
     padding: 3em 0; }
     .projects .project_container .proj {
-      flex: 1 1 33%;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.4s; }
+      flex: 1 1 50%;
+      justify-content: center;
+      align-content: space-around;
+      display: flex; }
+      .projects .project_container .proj a {
+        width: 640px;
+        display: flex;
+        flex: 1 1 50%; }
       .projects .project_container .proj img {
-        width: 100%; }
-    .projects .project_container .proj:hover img {
-      transform: scale(1.5);
-      transition: transform 0.4s; }
+        flex: 1 1 50%;
+        width: 640px; }
+    .projects .project_container #proj3 {
+      flex: 1 1 100%; }
+      .projects .project_container #proj3 img {
+        flex: 1 1 100%;
+        width: 1280px; }
 
 .contact {
   background-color: #31323d; }
@@ -128,10 +137,16 @@
 .proj4 {
   display: none; }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1439px) {
   .projects .project_container {
     flex-wrap: no-wrap; }
     .projects .project_container .proj {
       flex: 1 1 50%; }
       .projects .project_container .proj img {
+        flex: 1 1 50%;
+        width: 100%; }
+    .projects .project_container #proj3 {
+      flex: 1 1 100%; }
+      .projects .project_container #proj3 img {
+        flex: 1 1 100%;
         width: 100%; } }
