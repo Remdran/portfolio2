@@ -40,13 +40,13 @@
     line-height: 0;
     padding: 3em 0; }
     .projects .project_container .proj {
-      flex: 1 1 49%;
+      flex: 1 1 50%;
       display: flex;
       border: 0.1px solid #3a3b49; }
       .projects .project_container .proj a {
         position: relative;
         display: flex;
-        flex: 1 1 49%;
+        flex: 1 1 50%;
         overflow: hidden; }
         .projects .project_container .proj a .cover {
           position: absolute;
@@ -54,22 +54,21 @@
           line-height: 1.5;
           height: 100%;
           width: 100%;
-          transition: transform .6s ease-in-out; }
+          transition: transform .6s ease-in-out;
+          color: #FFFFFF; }
           .projects .project_container .proj a .cover .proj_title {
-            position: absolute;
-            font-size: 56px;
-            top: 20%;
-            left: 32%;
-            padding: 10px;
-            color: #FFFFFF; }
+            font-size: 4em;
+            padding: 1em;
+            text-align: center; }
           .projects .project_container .proj a .cover .proj_more {
-            color: #FFFFFF;
-            position: absolute;
-            top: 80%;
-            left: 37%; }
+            text-align: center;
+            font-size: .8em;
+            margin-top: 9em; }
+          .projects .project_container .proj a .cover #more3 {
+            margin-top: 15em; }
         .projects .project_container .proj a img {
           flex: 1 1 50%;
-          width: 640px; }
+          width: 638px; }
       .projects .project_container .proj a:hover .cover {
         transform: translateY(-700px); }
     .projects .project_container #proj3 {
@@ -159,15 +158,53 @@
   display: none; }
 
 @media only screen and (max-width: 1439px) {
-  .projects .project_container {
-    flex-wrap: no-wrap; }
-    .projects .project_container .proj {
-      flex: 1 1 50%; }
-      .projects .project_container .proj img {
-        flex: 1 1 50%;
-        width: 100%; }
-    .projects .project_container #proj3 {
+  .projects .project_container .proj a .cover #more3 {
+    left: 43%; }
+  .projects .project_container .proj a img {
+    width: 100%; }
+  .projects .project_container #proj3 img {
+    width: 100%; } }
+
+@media only screen and (max-width: 1200px) {
+  .projects .project_container .proj a .cover .proj_title {
+    font-size: 3em;
+    padding-top: 3em; }
+  .projects .project_container .proj a .cover .proj_more {
+    margin-top: 8em; }
+  .projects .project_container .proj a .cover #more3 {
+    margin-top: 12em; }
+  .projects .project_container .proj a img {
+    width: 100%; }
+  .projects .project_container #proj3 img {
+    width: 100%; } }
+
+@media only screen and (max-width: 992px) {
+  .banner .name {
+    font-size: 3em;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 6.5em; }
+  .banner .top_icons {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 1.5em; }
+  .projects .project_container .proj {
+    flex: 1 1 100%;
+    display: flex;
+    margin-bottom: 1em; }
+    .projects .project_container .proj a {
       flex: 1 1 100%; }
-      .projects .project_container #proj3 img {
-        flex: 1 1 100%;
-        width: 100%; } }
+      .projects .project_container .proj a .cover .proj_title {
+        font-size: 3em;
+        padding-top: 3em; }
+      .projects .project_container .proj a .cover .proj_more {
+        margin-top: 14em; }
+      .projects .project_container .proj a .cover #more3 {
+        margin-top: 12em; }
+  .contact {
+    background-color: #31323d; }
+    .contact .info h2 {
+      font-size: 3em; }
+    .contact .info .details {
+      font-size: 3em;
+      padding-top: .5em; } }
