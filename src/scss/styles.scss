@@ -54,19 +54,47 @@ $white: #FFFFFF;
         line-height: 0;
         padding: 3em 0;
         .proj {
-            flex: 1 1 50%;
-            justify-content: center;
-            align-content: space-around;
+            flex: 1 1 49%;
             display: flex; 
+            border: .1px solid $secondary;
             a {
-                width: 640px;
+                position: relative;
                 display: flex; 
-                flex: 1 1 50%;
+                flex: 1 1 49%; 
+                overflow: hidden;
+                .cover {
+                position: absolute;
+                background-color: $main;
+                line-height: 1.5;
+                height: 100%;       
+                width: 100%;  
+                transition:transform .6s ease-in-out;
+                    .proj_title{
+                        position: absolute;
+                        font-size: 56px;
+                        top: 20%;
+                        left: 32%;
+                        padding: 10px;
+                        color: $white;
+                        
+                        }
+                    .proj_more {
+                        color: $white;
+                        position: absolute;
+                        top: 80%;
+                        left: 37%;
+                    }    
+                }      
+                img {
+                    flex: 1 1 50%;
+                    width: 640px;     
+                }
             }
-            img {
-                flex: 1 1 50%;
-                width: 640px;     
-             }
+            a:hover {
+                .cover{
+                    transform: translateY(-700px);
+                }
+            }    
         }
         #proj3 {
             flex: 1 1 100%;
@@ -76,7 +104,10 @@ $white: #FFFFFF;
             }
         }
         .proj:hover {
-            img {
+            a{
+                img {
+
+                }
             }
         }
     }
