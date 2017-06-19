@@ -321,7 +321,9 @@ $white: #FFFFFF;
     .modal {            
     .modal_container {
         width: 100%;
-        height: 900px;
+        max-height: 900px;
+        min-height: 600px;
+        overflow: scroll;
         .modal_close {
             float: right;
             font-size: 1.2em;
@@ -357,3 +359,5 @@ $white: #FFFFFF;
     }
 }
 }
+
+//768 take away hover effect over project images and resize images
