@@ -208,3 +208,34 @@
     .contact .info .details {
       font-size: 3em;
       padding-top: .5em; } }
+
+@media only screen and (max-width: 820px) {
+  .modal .modal_container {
+    width: 100%;
+    height: 900px; }
+    .modal .modal_container .modal_close {
+      float: right;
+      font-size: 1.2em; }
+    .modal .modal_container .modal_title {
+      margin-top: .5em;
+      font-size: 1.5em;
+      padding: .8em;
+      text-align: center; }
+    .modal .modal_container .modal_info {
+      font-size: .9em;
+      width: 100%;
+      padding: .8em;
+      text-align: center; }
+    .modal .modal_container .modal_skills {
+      font-size: .9em;
+      width: 100%;
+      padding: .6em;
+      text-align: center; }
+    .modal .modal_container .modal_img {
+      width: 300px;
+      float: none;
+      display: block;
+      margin: 1em auto; }
+    .modal .modal_container .modal_icons {
+      font-size: 1.4em;
+      text-align: center; } }
