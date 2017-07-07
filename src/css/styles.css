@@ -43,8 +43,7 @@
     padding: 3em 0; }
     .projects .project_container .proj {
       flex: 1 1 50%;
-      display: flex;
-      border: 0.1px solid #3a3b49; }
+      display: flex; }
       .projects .project_container .proj a {
         position: relative;
         display: flex;
@@ -60,17 +59,15 @@
           color: #FFFFFF;
           display: flex;
           justify-content: center;
-          flex-direction: column; }
+          flex-direction: column;
+          border: 0.1px solid #3a3b49; }
           .projects .project_container .proj a .cover .proj_title {
             font-size: 4em;
             padding: 1em;
             text-align: center; }
           .projects .project_container .proj a .cover .proj_more {
             text-align: center;
-            font-size: .8em;
-            margin-top: 9em; }
-          .projects .project_container .proj a .cover #more3 {
-            margin-top: 15em; }
+            font-size: .8em; }
         .projects .project_container .proj a img {
           flex: 1 1 50%;
           width: 638px; }
@@ -173,10 +170,6 @@
 @media only screen and (max-width: 1200px) {
   .projects .project_container .proj a .cover .proj_title {
     font-size: 3em; }
-  .projects .project_container .proj a .cover .proj_more {
-    margin-top: 8em; }
-  .projects .project_container .proj a .cover #more3 {
-    margin-top: 12em; }
   .projects .project_container .proj a img {
     width: 100%; }
   .projects .project_container #proj3 img {
@@ -194,12 +187,7 @@
     .projects .project_container .proj a {
       flex: 1 1 100%; }
       .projects .project_container .proj a .cover .proj_title {
-        font-size: 3em;
-        padding-top: 2.5em; }
-      .projects .project_container .proj a .cover .proj_more {
-        margin-top: 10em; }
-      .projects .project_container .proj a .cover #more3 {
-        margin-top: 12em; }
+        font-size: 3em; }
   .contact {
     background-color: #31323d; }
     .contact .info h2 {
@@ -212,7 +200,7 @@
   .modal .modal_container {
     width: 100%;
     max-height: 900px;
-    min-height: 600px;
+    min-height: 95%;
     overflow: scroll; }
     .modal .modal_container .modal_close {
       float: right;
@@ -249,19 +237,18 @@
     font-size: 2.8em; }
   .projects .project_container {
     width: 500px;
+    max-width: 90%;
     margin: 0 auto; }
     .projects .project_container .proj a {
+      justify-content: center;
+      flex-direction: column;
       height: 500px; }
       .projects .project_container .proj a .cover {
         transition: none; }
         .projects .project_container .proj a .cover .proj_title {
-          font-size: 2.5em;
-          padding: 1em; }
+          font-size: 2.5em; }
         .projects .project_container .proj a .cover .proj_more {
-          font-size: .8em;
-          margin-top: 9em; }
-        .projects .project_container .proj a .cover #more3 {
-          margin-top: 15em; }
+          font-size: .8em; }
       .projects .project_container .proj a img {
         display: none; }
     .projects .project_container .proj a:hover .cover {
@@ -275,3 +262,80 @@
     .contact .info .details {
       font-size: 2.8em;
       padding-top: .5em; } }
+
+@media only screen and (max-width: 480px) {
+  .banner .name {
+    font-size: 1.8em; }
+  .banner .top_icons {
+    font-size: 2em; }
+  .projects .project_container .proj a {
+    height: 400px; }
+    .projects .project_container .proj a .cover .proj_title {
+      font-size: 1.8em; }
+    .projects .project_container .proj a .cover .proj_more {
+      font-size: .6em; }
+  .contact .info {
+    padding: 1.2em 0; }
+    .contact .info h2 {
+      font-size: 1.8em; }
+    .contact .info .details {
+      font-size: 1.8em;
+      padding-top: .5em; }
+  .modal .modal_container .modal_close {
+    float: right;
+    font-size: 1em; }
+  .modal .modal_container .modal_title {
+    margin-top: .4em;
+    font-size: 1.2em;
+    padding: .8em; }
+  .modal .modal_container .modal_info {
+    font-size: .8em;
+    padding: .8em; }
+  .modal .modal_container .modal_skills {
+    font-size: .8em;
+    padding: .8em; }
+  .modal .modal_container .modal_img {
+    width: 250px;
+    margin: .5em auto; }
+  .modal .modal_container .modal_icons {
+    font-size: 1.2em; } }
+
+@media only screen and (max-width: 320px) {
+  .banner .name {
+    font-size: 1.4em; }
+  .banner .top_icons {
+    font-size: 1.6em; }
+  .projects .project_container .proj a {
+    height: 300px; }
+    .projects .project_container .proj a .cover .proj_title {
+      font-size: 1.4em; }
+    .projects .project_container .proj a .cover .proj_more {
+      font-size: .6em; }
+  .contact .info {
+    padding: 1em 0; }
+    .contact .info h2 {
+      font-size: 1.4em; }
+    .contact .info .details {
+      font-size: 1.4em;
+      padding-top: .5em; }
+  .modal .modal_container {
+    width: 100%;
+    height: 100vh;
+    padding: 1em; }
+    .modal .modal_container .modal_close {
+      float: right;
+      font-size: .8em; }
+    .modal .modal_container .modal_title {
+      margin-top: .6em;
+      font-size: 1em;
+      padding: .4em; }
+    .modal .modal_container .modal_info {
+      font-size: .7em;
+      padding: .4em; }
+    .modal .modal_container .modal_skills {
+      font-size: .7em;
+      padding: .6em; }
+    .modal .modal_container .modal_img {
+      width: 200px; }
+    .modal .modal_container .modal_icons {
+      font-size: 1.2em; } }
